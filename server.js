@@ -4,7 +4,7 @@ var handleRequest = function(request, response) {
   var now = new Date()
   console.log('Received request for URL: ' + request.url + ' ' + now.toString());
   response.writeHead(200);
-  response.end('Hello World From node!');
+  response.end('Hello World From node!\n');
 };
 
 var www = http.createServer(handleRequest);
